@@ -1,0 +1,22 @@
+{
+  "name": "responsa",
+  "homepage": "https://github.com/tghelere/responsa",
+  "authors": [
+    "tghelere <ghelere@outlook.com>"
+  ],
+  "description": "Design Responsivo",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "bootstrap-sass": "^3.3.7",
+    "breakpoint-sass": "^2.7.1"
+  }
+}
