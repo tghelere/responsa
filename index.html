@@ -9,51 +9,77 @@
 	<link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="logo">
-				<a href="index.html">
-					<img src="images/logo-tag-topo.svg" alt="Logo Topo Tag">
-				</a>
-			</div>
-			<div class="links">
-				<nav>
-					<ul>
-						<li><a href="index.html">Início</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-				</nav>
-				<ul class="social">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-				</ul>
-			</div>
-			<h1><strong>Thyago</strong> H. <strong>Ghelere</strong></h1>
-			<p>Code // Share // Reboot</p>
-		</div>
-	</header>
-	<main>
-		<section class="sobre">
+	<nav class="menu-responsivo">
+		<ul>
+			<li><a href="index.html">Início</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+	</nav>
+	<div class="layout">
+		<header>
 			<div class="container">
-				<div class="itens">
-					<div class="foto"><img src="images/foto-tag-miolo.png" alt="Foto Tag"></div>
-					<div class="icone-lapis"><i class="fa fa-pencil"></i></div>
-					<div class="icone-codigo"><i class="fa fa-code"></i></div>
-					<div class="icone-coracao"><i class="fa fa-heart"></i></div>
-					<div class="icone-compartilhar"><i class="fa fa-share-alt"></i></div>
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/logo-tag-topo.svg" alt="Logo Topo Tag">
+					</a>
 				</div>
-				<div class="textos">
-					<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong> Repudiandae molestiae, ad, saepe tenetur magni et praesentium quasi laudantium, in, dicta consequuntur! Libero commodi fugit ullam magni obcaecati pariatur quos earum.</p>
-					<a href="#" class="botao medio"><i class="fa fa-eye"></i> Continue Lendo</a>
+				<div class="links">
+					<nav>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+					</nav>
+					<a href="#" class="toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+					</ul>
 				</div>
+				<h1><strong>Thyago</strong> H. <strong>Ghelere</strong></h1>
+				<p>Code // Share // Reboot</p>
 			</div>
-		</section>
-	</main>
-	<footer>
-		<div class="logo-rodape"><a href="index.html"><img src="images/logo-tag-rodape.svg" alt="Logo Tag Rodape"></a></div>
-		<p>2017 Todos os Direitos Reservados</p>
-	</footer>
+		</header>
+		<main>
+			<section class="sobre">
+				<div class="container">
+					<div class="itens">
+						<div class="foto"><img src="images/foto-tag-miolo.png" alt="Foto Tag"></div>
+						<div class="icone-lapis"><i class="fa fa-pencil"></i></div>
+						<div class="icone-codigo"><i class="fa fa-code"></i></div>
+						<div class="icone-coracao"><i class="fa fa-heart"></i></div>
+						<div class="icone-compartilhar"><i class="fa fa-share-alt"></i></div>
+					</div>
+					<div class="textos">
+						<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong> Repudiandae molestiae, ad, saepe tenetur magni et praesentium quasi laudantium, in, dicta consequuntur! Libero commodi fugit ullam magni obcaecati pariatur quos earum.</p>
+						<a href="#" class="botao medio"><i class="fa fa-eye"></i> Continue Lendo</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="logo-rodape"><a href="index.html"><img src="images/logo-tag-rodape.svg" alt="Logo Tag Rodape"></a></div>
+			<p>2017 Todos os Direitos Reservados</p>
+		</footer>
+	</div>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			/* $('menu-responsivo').hide() */
+			$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo')
+				$('.menu-responsivo').toggleClass('ativo')
+				$(this).toggleClass('ativo')
+			})
+		});
+	</script>
 </body>
 </html>
