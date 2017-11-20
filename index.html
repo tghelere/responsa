@@ -6,6 +6,7 @@
 	<title>Responsa</title>
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/home.css">
 </head>
 <body>
@@ -20,12 +21,12 @@
 	<div class="layout">
 		<header>
 			<div class="container">
-				<div class="logo">
+				<div class="logo wow slideInLeft" data-wow-duration="1s">
 					<a href="index.html">
 						<img src="images/logo-tag-topo.svg" alt="Logo Topo Tag">
 					</a>
 				</div>
-				<div class="links">
+				<div class="links wow fadeInDown">
 					<nav>
 						<ul>
 							<li><a href="index.html">Início</a></li>
@@ -53,10 +54,10 @@
 				<div class="container">
 					<div class="itens">
 						<div class="foto"><img src="images/foto-tag-miolo.png" alt="Foto Tag"></div>
-						<div class="icone-lapis"><i class="fa fa-pencil"></i></div>
-						<div class="icone-codigo"><i class="fa fa-code"></i></div>
-						<div class="icone-coracao"><i class="fa fa-heart"></i></div>
-						<div class="icone-compartilhar"><i class="fa fa-share-alt"></i></div>
+						<div class="icone-lapis wow flipInX" data-wow-delay="0.2s"><i class="fa fa-pencil"></i></div>
+						<div class="icone-codigo wow flipInX" data-wow-delay="0.4s"><i class="fa fa-code"></i></div>
+						<div class="icone-coracao wow flipInX" data-wow-delay="0.6s"><i class="fa fa-heart"></i></div>
+						<div class="icone-compartilhar wow flipInX" data-wow-delay="0.8s"><i class="fa fa-share-alt"></i></div>
 					</div>
 					<div class="textos">
 						<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong> Repudiandae molestiae, ad, saepe tenetur magni et praesentium quasi laudantium, in, dicta consequuntur! Libero commodi fugit ullam magni obcaecati pariatur quos earum.</p>
@@ -70,7 +71,8 @@
 			<p>2017 Todos os Direitos Reservados</p>
 		</footer>
 	</div>
-	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slim.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			/* $('menu-responsivo').hide() */
@@ -79,6 +81,7 @@
 				$('.menu-responsivo').toggleClass('ativo')
 				$(this).toggleClass('ativo')
 			})
+			new WOW().init()
 		});
 	</script>
 </body>
